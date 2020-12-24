@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>About</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'home/style.css' %}">
+        <link rel="icon"
+              type="image/png"
+              href = "{% static 'home/images/glogo.png' %}"
+    </head>
+
+<body>
+
+    <nav>
+        <div class="topnav">
+            <a href="{% url 'index' %}"><img src = "{% static 'home/images/glogo.png' %}" width = 15 height = auto></a>
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'gallery' %}">Gallery</a>
+        </div>
+    </nav>
+
+<main>
+
+
+
+</main>
+
+
+<footer>
+
+    <p class = "footerp">Website Name</p>
+    
+</footer>
+
+</body>
+
+</html>
