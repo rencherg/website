@@ -1,0 +1,15 @@
+<h1>Welcome to the forum</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+{% if comment_list %}
+    <ul>
+    {% for comment in comment_list %}
+        <li>{{ comment.comment_text }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Looks like there isn't anything here</p>
+{% endif %}
+
+<a href = {% url 'new' %}>New Comment</a>

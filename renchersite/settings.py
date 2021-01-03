@@ -31,7 +31,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+
+    #User created apps
     'home.apps.HomeConfig',
+    'forum.apps.ForumConfig',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
