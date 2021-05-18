@@ -1,1 +1,7 @@
-<h1>{{ comment.comment_text }}</h1>
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'forum/style.css' %}">
+
+<h1>{{ comment.title }}</h1>
+
+<p>{{ comment.content }}</p>

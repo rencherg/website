@@ -1,3 +1,11 @@
+{% load static %}
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'forum/index.css' %}">
+
+</head>
+
 <h1>Welcome to the forum</h1>
 
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
@@ -5,7 +13,7 @@
 {% if comment_list %}
     <ul>
     {% for comment in comment_list %}
-        <li>{{ comment.comment_text }}</li>
+        <li><a href = {% url 'comment' comment.id %} class="linklist">{{ comment.title }}</a></li>
     {% endfor %}
     </ul>
 {% else %}

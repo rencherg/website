@@ -1,3 +1,13 @@
+<head>
+
+    <style>
+        
+            textarea{ resize="none"; }
+        
+    </style>
+
+</head>
+
 <h1>New post</h1>
 <form method="POST">{% csrf_token %}
     {{ form.as_p }}
